@@ -1,6 +1,5 @@
 @use "variables" as *;
 
-
 .backgroundPlaceHolder {
   width: 100%;
   height: 100%;
@@ -34,11 +33,10 @@
   position: relative;
 }
 
-
 .placeholder-text:before {
   content: "";
   position: absolute;
-  
+
   background-color: transparent;
   left: 0;
   top: -$small-gap;
@@ -52,7 +50,7 @@
 .placeholder-text:after {
   content: "";
   position: absolute;
-  
+
   background-color: transparent;
   left: 0;
   bottom: -$small-gap;
