@@ -1,0 +1,88 @@
+.outletInner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.outletOutside {
+	position: relative;
+	height: 100%;
+	background-color: lightgrey;
+	border-radius: 1em;
+	padding: 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.outlet {
+	background-color: white;
+	border-radius: 1em;
+	padding: 1em;
+	height: 100vh;
+	min-height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.outletHeader {
+	padding: 1em;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.outletDivider {
+	position: relative;
+	width: 100%;
+	height: 140px;
+	background-color: white;
+}
+
+.outletDividerCornerTopLeft::before,
+.outletDividerCornerTopRight::before,
+.outletDividerCornerBottomRight::before,
+.outletDividerCornerBottomLeft::before {
+	content: "";
+	position: absolute;
+	height: 2em;
+	width: 2em;
+	background-color: transparent;
+}
+
+.outletDividerCornerTopRight::before,
+.outletDividerCornerBottomRight::before {
+	right: 0;
+}
+
+.outletDividerCornerBottomRight::before,
+.outletDividerCornerBottomLeft::before, {
+	bottom: -2em;
+	box-shadow: 0 -1em 0 0 white;
+}
+
+.outletDividerCornerTopRight::before,
+.outletDividerCornerTopLeft::before {
+	top: -2em;
+	box-shadow: 0 1em 0 0 white;
+}
+
+.outletDividerCornerTopLeft::before,
+.outletDividerCornerBottomLeft::before {
+	left: 0;
+}
+
+.outletDividerCornerTopRight::before {
+	border-bottom-right-radius: 1em;
+}
+
+.outletDividerCornerBottomRight::before {
+	border-top-right-radius: 1em;
+}
+
+.outletDividerCornerTopLeft::before {
+  	border-bottom-left-radius: 1em;
+}
+
+.outletDividerCornerBottomLeft::before {
+  	border-top-left-radius: 1em;
+}

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import backgroundImage from "../public/IMG_0636.jpeg";
+import backgroundImage from "../public/IMG_0656.jpg";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
