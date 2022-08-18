@@ -4,28 +4,32 @@ import Image from "next/image";
 import bg from "../../public/IMG_0656.jpg";
 
 interface OutletProps {
-	title: string;
+  children?: JSX.Element;
 }
 
-export default function Outlet({title}: OutletProps) {
-	return (
-		<div className={styles.outlet}>
-			<div className={styles.outletOutside}>
-				<Image className={styles.outletBackground} src={bg.src} layout="fill" alt="background image of website"/>
-				<div className={styles.outletInner}>
-					<div className={styles.outletHeader}>
-						<Image src={logo.src} alt="logo" height={40} width={100}/>	
-					</div>
+export default function Outlet({ children }: OutletProps) {
+  return (
+    <div className={styles.outlet}>
+      <div className={styles.outside}>
+        <Image src={bg.src} layout="fill" objectFit="cover" alt="background image of website" />
+        <div className={styles.inner}>
+          <div className={styles.header}>
+            <Image src={logo.src} alt="logo" height={40} width={100} />	
+          </div>
 
-					<div className={styles.outletDivider}>
-						<div className={styles.outletDividerCornerTopLeft}></div>
-						<div className={styles.outletDividerCornerTopRight}></div>
-						<div className={styles.outletDividerCornerBottomRight}></div>
-						<div className={styles.outletDividerCornerBottomLeft}></div>
-					</div>
-				</div>
+          <div className={styles.divider}>
+            <div className={styles.dividerCornerTopLeft}></div>
+            <div className={styles.dividerCornerTopRight}></div>
+            <div className={styles.dividerCornerBottomRight}></div>
+            <div className={styles.dividerCornerBottomLeft}></div>
+          </div>
+
+          <div className={styles.childeren}>
+            {children}
+          </div>
+        </div>
 				
-			</div>
-		</div>
-	);
+      </div>
+    </div>
+  );
 }

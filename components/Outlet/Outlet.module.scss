@@ -1,88 +1,94 @@
-.outletInner {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
+$border-radius: 0.8em;
+
+.inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
-.outletOutside {
-	position: relative;
-	height: 100%;
-	background-color: lightgrey;
-	border-radius: 1em;
-	padding: 1em;
-	box-sizing: border-box;
-	overflow: hidden;
+
+.outside {
+  position: relative;
+  height: 100%;
+  background-color: lightgrey;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.childeren {
+  padding: 1em;
 }
 
 .outlet {
-	background-color: white;
-	border-radius: 1em;
-	padding: 1em;
-	height: 100vh;
-	min-height: 100vh;
-	width: 100%;
-	box-sizing: border-box;
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.outletHeader {
-	padding: 1em;
-	margin: 0 auto;
-	width: fit-content;
+.header {
+  padding: 1em;
+  margin: 0 auto;
+  width: fit-content;
 }
 
-.outletDivider {
-	position: relative;
-	width: 100%;
-	height: 140px;
-	background-color: white;
+.divider {
+  position: relative;
+  width: 100%;
+  height: calc(2em + 40px);
+  background-color: white;
 }
 
-.outletDividerCornerTopLeft::before,
-.outletDividerCornerTopRight::before,
-.outletDividerCornerBottomRight::before,
-.outletDividerCornerBottomLeft::before {
-	content: "";
-	position: absolute;
-	height: 2em;
-	width: 2em;
-	background-color: transparent;
+.dividerCornerTopLeft::before,
+.dividerCornerTopRight::before,
+.dividerCornerBottomRight::before,
+.dividerCornerBottomLeft::before {
+  content: "";
+  position: absolute;
+  height: $border-radius * 2;
+  width: $border-radius * 2;
+  background-color: transparent;
 }
 
-.outletDividerCornerTopRight::before,
-.outletDividerCornerBottomRight::before {
-	right: 0;
+.dividerCornerTopRight::before,
+.dividerCornerBottomRight::before {
+  right: 0;
 }
 
-.outletDividerCornerBottomRight::before,
-.outletDividerCornerBottomLeft::before, {
-	bottom: -2em;
-	box-shadow: 0 -1em 0 0 white;
+.dividerCornerBottomRight::before,
+.dividerCornerBottomLeft::before {
+  bottom: -$border-radius * 2;
+  box-shadow: 0 (-$border-radius) 0 0 white;
 }
 
-.outletDividerCornerTopRight::before,
-.outletDividerCornerTopLeft::before {
-	top: -2em;
-	box-shadow: 0 1em 0 0 white;
+.dividerCornerTopRight::before,
+.dividerCornerTopLeft::before {
+  top: -$border-radius * 2;
+  box-shadow: 0 $border-radius 0 0 white;
 }
 
-.outletDividerCornerTopLeft::before,
-.outletDividerCornerBottomLeft::before {
-	left: 0;
+.dividerCornerTopLeft::before,
+.dividerCornerBottomLeft::before {
+  left: 0;
 }
 
-.outletDividerCornerTopRight::before {
-	border-bottom-right-radius: 1em;
+.dividerCornerTopRight::before {
+  border-bottom-right-radius: $border-radius;
 }
 
-.outletDividerCornerBottomRight::before {
-	border-top-right-radius: 1em;
+.dividerCornerBottomRight::before {
+  border-top-right-radius: $border-radius;
 }
 
-.outletDividerCornerTopLeft::before {
-  	border-bottom-left-radius: 1em;
+.dividerCornerTopLeft::before {
+  border-bottom-left-radius: $border-radius;
 }
 
-.outletDividerCornerBottomLeft::before {
-  	border-top-left-radius: 1em;
+.dividerCornerBottomLeft::before {
+  border-top-left-radius: $border-radius;
 }

@@ -1,5 +1,61 @@
 .card {
-  border-radius: 10px;
+  border-radius: 0.8em;
   background-color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.action {
+  &:hover {
+    background-color: ghostwhite;
+  }
+
+  &:active {
+    background-color: whitesmoke;
+  }
+}
+
+.small {
+  min-height: 8em;
+  max-height: 12em;
+}
+
+.medium {
+  min-height: 12em;
+  max-height: 18em;
+}
+
+.big {
+  min-height: 18em;
+}
+
+.swap {
+  flex-direction: row-reverse;
+}
+
+.left {
+  position: relative;
+  font-size: 3em;
+  background-color: lightgrey;
+  user-select: none;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.right {
   padding: 1em;
+  flex: 2;
+}
+
+.image {
+  position: absolute;
+  object-fit: cover;
 }
