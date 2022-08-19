@@ -1,10 +1,11 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
-import Card from "../components/Card";
-import image from "../public/DSCF0733.jpeg";
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import Card from 'components/Card';
+
+import image from '../public/DSCF0733.jpeg';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Card",
+  title: 'Card',
   component: Card,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Card>;

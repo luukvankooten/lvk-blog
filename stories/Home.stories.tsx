@@ -1,9 +1,8 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
-import Home from "../pages";
-
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import Home from 'pages';
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Home",
+  title: 'Home',
   component: Home,
   parameters: {
     layout: 'fullscreen'

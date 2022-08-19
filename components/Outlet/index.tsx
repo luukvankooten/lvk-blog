@@ -1,7 +1,8 @@
-import styles from "./Outlet.module.scss";
-import logo from "../../public/logo.svg";
-import Image from "next/image";
-import bg from "../../public/IMG_0656.jpg";
+import Image from 'next/image';
+
+import bg from '../../public/IMG_0656.jpg';
+import logo from '../../public/logo.svg';
+import styles from './Outlet.module.scss';
 
 interface OutletProps {
   children?: JSX.Element;

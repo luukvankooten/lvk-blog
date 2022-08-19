@@ -1,8 +1,8 @@
-import { StaticImageData } from "next/image";
-import styles from "./Card.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from 'next/image';
 
-type CardType = | "small" | "medium" | "big"
+import styles from './Card.module.scss';
+
+type CardType = | 'small' | 'medium' | 'big'
 
 interface CardProps {
 	type?: CardType,
@@ -13,7 +13,7 @@ interface CardProps {
 	text?: string;
 }
 
-export default function Card({ type = "medium", onClick, image, swap = false, children, text = "🔗" }: CardProps) {
+export default function Card({ type = 'medium', onClick, image, swap = false, children, text = '🔗' }: CardProps) {
 	const size = {
 		small: styles.small,
 		medium: styles.medium,
@@ -31,11 +31,11 @@ export default function Card({ type = "medium", onClick, image, swap = false, ch
 	}
 
 	return (
-		<div className={classNames.join(" ")} onClick={onClick}>
+		<div className={classNames.join(' ')} onClick={onClick}>
 			<div className={styles.left}>
-				{(image && <Image layout="fill" objectFit="cover" src={image.src} />) || <p className={styles.text}>{text}</p>}
+				{(image && <Image layout="fill" objectFit="cover" src={image.src} alt="some" />) || <p className={styles.text}>{text}</p>}
 			</div>
-			<div className={styles.right}>{children}</div>	
+			<div className={styles.right}>{children}</div>
 		</div>
 	);
 }
