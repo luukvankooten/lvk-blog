@@ -1,5 +1,5 @@
+import Home from '@lvk-blog/pages/index';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Home from 'pages';
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Home',

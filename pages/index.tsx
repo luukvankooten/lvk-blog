@@ -1,5 +1,5 @@
-import Card from 'components/Card';
-import Outlet from 'components/Outlet';
+import Card from '@lvk-blog/components/Card';
+import Outlet from '@lvk-blog/components/Outlet';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 

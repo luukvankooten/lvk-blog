@@ -1,5 +1,5 @@
+import Outlet from '@lvk-blog/components/Outlet';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Outlet from 'components/Outlet';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

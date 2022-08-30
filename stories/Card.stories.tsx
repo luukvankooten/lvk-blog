@@ -1,5 +1,5 @@
+import Card from '@lvk-blog/components/Card';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Card from 'components/Card';
 
 import image from '../public/DSCF0733.jpeg';
 

@@ -16,8 +16,10 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "components/*": ["components/*"],
-      "pages/*": ["pages/*"]
+      "@lvk-blog/components/*": ["components/*"],
+      "@lvk-blog/pages/*": ["pages/*"],
+      "@lvk-blog/interface/*": ["interface/*"],
+      "@lvk-blog/lib/*": ["lib/*"]
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

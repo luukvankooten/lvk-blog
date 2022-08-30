@@ -5,6 +5,7 @@
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "unused-imports/no-unused-imports": "error",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "indent": ["error", 2]
   }
 }
