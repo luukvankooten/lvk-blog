@@ -1,7 +1,7 @@
 import { Paragraph as Node } from 'mdast';
 
-import Nodes, { NodeProps } from '.'
+import { NodeProps } from '.';
 
-export default function Paragraph({ node }: NodeProps<Node>) {
-  return <p><Nodes nodes={node.children} /></p>;
+export default function Paragraph({ node, children }: NodeProps<Node>) {
+  return <p>{children}</p>
 }

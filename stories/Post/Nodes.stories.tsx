@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Nodes> = (args) => <Nodes {...args} />;
 
 export const DefaultNodes = Template.bind({});
 DefaultNodes.args = {
-  nodes: remark().parse(markdown).children
+  nodes: remark().parse(markdown).children as any
 };
